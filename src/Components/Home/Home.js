@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="container">
             <Navigation></Navigation>
-            <div className="row">
+            <div className="row pt-4">
             {
                 products.map((product,i) => <Products key={i} product={product}></Products>)
             }
