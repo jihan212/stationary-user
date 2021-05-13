@@ -4,8 +4,8 @@ import './Products.css'
 
 const Products = ({product}) => {
     return (
-        <div className="col">
-            <div class="card" style={{width: "18rem"}}>
+        <div className="col m-4">
+            <div className="card" style={{width: "18rem"}}>
                 <img src={product.imageURL} class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">{product.name}</h5>

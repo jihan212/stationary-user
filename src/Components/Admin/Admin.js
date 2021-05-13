@@ -17,7 +17,7 @@ const Admin = () => {
             imageURL : imageURL
         }
         console.log(productData);
-        const url = `http://localhost:5000/admin`;
+        const url = `https://safe-plateau-29980.herokuapp.com/admin`;
 
         fetch(url,{
             method: 'POST',
