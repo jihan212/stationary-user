@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Products.css'
 
 const Products = ({product}) => {
     return (
@@ -9,7 +10,7 @@ const Products = ({product}) => {
                     <div class="card-body">
                         <h5 class="card-title">{product.name}</h5>
                         <button class="btn btn-outline-dark" >
-                            <Link to="/order">Buy Now</Link>
+                            <Link className="button" to="/order">Buy Now</Link>
                         </button>
                     </div>
             </div>
