@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Products.css'
 
 const Products = ({product}) => {
+    const {_id} = product;
     return (
         <div className="col m-4">
             <div className="card" style={{width: "18rem"}}>
@@ -11,7 +12,7 @@ const Products = ({product}) => {
                         <h5 class="card-title">{product.name}</h5>
                         <p className="text-secondary">Price: ${product.price}</p>
                         <button class="btn btn-outline-dark" >
-                            <Link className="button" to="/order">Buy Now</Link>
+                            <Link className="button" to={"/order/"+_id}>Buy Now</Link>
                         </button>
                     </div>
             </div>
