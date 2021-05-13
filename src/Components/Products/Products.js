@@ -9,6 +9,7 @@ const Products = ({product}) => {
                 <img src={product.imageURL} class="card-img-top" alt="..." />
                     <div class="card-body">
                         <h5 class="card-title">{product.name}</h5>
+                        <p className="text-secondary">Price: {product.price}</p>
                         <button class="btn btn-outline-dark" >
                             <Link className="button" to="/order">Buy Now</Link>
                         </button>
