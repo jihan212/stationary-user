@@ -10,7 +10,7 @@ const Home = () => {
         .then(data => setProducts(data))
     },[])
     return (
-        <div className="container">
+        <div className="container-fluid">
             <Navigation></Navigation>
             <div className="row pt-4">
             {

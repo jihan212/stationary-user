@@ -28,6 +28,7 @@ const Login = () => {
             var errorMessage = error.message;
             // The email of the user's account used.
             var email = error.email;
+            console.log(errorCode, errorMessage, email);
         });
     }
     return (

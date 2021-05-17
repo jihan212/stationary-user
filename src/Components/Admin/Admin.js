@@ -46,26 +46,20 @@ const Admin = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container-fluid">
             <Navigation></Navigation>
-            <div className="admin">
-            <div className="side-div">
-                <h2><Link to="/">Manage Products</Link></h2>
-                <h2>Add Product</h2>
-            </div>
-            <div className="form-div">
-            <form className="submitForm" onSubmit={handleSubmit(onSubmit)}>
-                <h3>Input Product Information</h3>
-            <input name="name" defaultValue="Product Name" {...register('name')} />
-            <br/>
-            <input name="price" defaultValue="Product Price" {...register('price')} />
-            <br/>
-            <input name="exampleRequired" type="file" onChange={handleImageUpload} />
-            <br/>
-            <input type="submit" />
-            </form>
-            </div>
-            </div>
+            <section>
+                <form className="submitForm" onSubmit={handleSubmit(onSubmit)}>
+                    <h3 className="text-secondary">Input Product Information</h3>
+                    <input name="name" placeholder="Product Name" {...register('name')} />
+                    <br/>
+                    <input name="price" placeholder="Product Price" {...register('price')} />
+                    <br/>
+                    <input name="exampleRequired" type="file" onChange={handleImageUpload} />
+                    <br/>
+                    <input type="submit" />
+                </form>
+            </section>
         </div>
     );
 };

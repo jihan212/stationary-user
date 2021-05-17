@@ -9,7 +9,7 @@ const Order = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://safe-plateau-29980.herokuapp.com/products/${id}`)
         .then (res => res.json())
         .then (data => setProduct(data))
         
@@ -17,7 +17,7 @@ const Order = () => {
 
       const handleOrder = () => {
         const newOrder = { ...product};
-        fetch('http://localhost:5000/products/addOrder', {
+        fetch('https://safe-plateau-29980.herokuapp.com/products/addOrder', {
           method : 'POST',
           headers : { 'content-type': 'application/json' },
           body : JSON.stringify(newOrder)
@@ -30,7 +30,7 @@ const Order = () => {
 
 
     return (
-        <div className="container">
+        <div className="container-fluid">
             <Navigation></Navigation>
             <div className="table-style">
             <table class="table">
